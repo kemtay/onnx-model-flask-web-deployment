@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+{{ super() }}
+{% endblock %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block page_content %}
+
+<div class="page-header">
+
+<div class="page-1">
+    <h2>Bird Classification</h2>
+    {{ wtf.quick_form(file_form) }} 
+</div>
+
+
+</div>
+
+{% endblock %}

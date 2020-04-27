@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+{{ super() }}
+{% endblock %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block page_content %}
+
+<div class="page-header">
+    <!--h1 align=center><mark>Bird Classification</mark></h1-->
+    <!-- {{input|safe}} -->
+    
+    <div align="center">
+        <h2 align=center><mark>Bird Classification Result</mark></h2>
+        <img src="{{url_for('static', filename=fig_1, r=rand_num)}}">
+        <img src="{{url_for('static', filename=fig_2, r=rand_num)}}">
+    </div>    
+
+    <div class="page-footer" align="center">
+        <p>This is a project done by Ms Tay Sok Kem in Mar 2020.</p>
+    </div>
+</div>
+
+{% endblock %}

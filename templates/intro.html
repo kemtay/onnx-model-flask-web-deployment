@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+{{ super() }}
+{% endblock %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h2 align=center><mark>Bird Classification</mark></h2>
+
+    <div class="container">
+        <p class="just-text">
+        This a web-based application to classify birds in Singapore.<br>
+        The deployment framework is Python Flask.<br>
+        The model is ONNX trained by Microsoft Azure Custom Vision service.<br>
+        <img src='/static/img/model.png'>
+        </p>
+    </div>
+</div>
+
+{% endblock %}
